@@ -16,7 +16,7 @@
 
 .hero-img-bottom {
 
-    min-height: 50dvh;
+    min-height: 62dvh;
     background-image: url(Assets/skele-banner.png);
     background-size: cover;
     background-position: center;
@@ -31,4 +31,52 @@
     width: 20px;
     background-color: var(--main-col);
     border-radius: 1em;
+}
+
+/* hanging card css */
+.containing-block {
+    position: relative;
+    min-height: 5vh;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .magic-card {
+        position: absolute;
+        bottom: -20vh;
+    }
+
+    .magic-card-offset {
+        margin-top: 15vh;
+    }
+}
+
+
+
+
+h2 {
+    font-family: "Angkor", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+/*Google Fonts*/
+.angkor-regular {
+    font-family: "Angkor", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-mono {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }

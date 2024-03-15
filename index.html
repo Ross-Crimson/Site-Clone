@@ -13,12 +13,21 @@
     <!-- material design icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
 
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Angkor&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- remember to add "stick-top" to nav class -->
-    <nav class="container-fluid bg-dark">
+
+    <section id="user-info"></section>
+    <!-- SECTION Nav -->
+    <nav class="container-fluid bg-dark sticky-top">
         <div>
             <img class="nav-logo" src="Assets/money-bones-logo.png" alt="bones-are-their-money">
         </div>
@@ -27,34 +36,34 @@
     <header class="container-fluid bd-dark">
         <section>
             <div class="row hero-img justify-content-around p-5">
-                <div class=" col-3 justify-content-between">
+                <div class="col-md-3">
                     <div class="bg-white rounded p-3">
-                        <div class="row">Your Info</div>
-                        <div class="row">
+                        <div class="row p-2">Your Info</div>
+                        <div class="row p-2">
                             <input type="Name" class="form-control" id="user-name" placeholder="Name">
                         </div>
-                        <div class="row">
+                        <div class="row p-2">
                             <input type="email" class="form-control" id="user-email" placeholder="Email">
                         </div>
-                        <div class="row">
-                            <div class="col">
+                        <div class="row justify-content-between">
+                            <div class="col p-2">
                                 <input type="phone" class="form-control" id="user-phoneNum" placeholder="Phone">
                             </div>
-                            <div class="col">
+                            <div class="col p-2">
                                 <input type="phone-ext" class="form-control" id="user-phone-ext" placeholder="Ext.">
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row p-2">
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
                                 placeholder="Message"></textarea>
                         </div>
-                        <div class="row">
+                        <div class="row py-2">
                             <div>
                                 <input type="checkbox" class="form-check-inline">
                                 <label>I agree to releasing my bones.</label>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row py-2">
                             <div>
                                 <button class="btn btn-primary rounded-pill">Commit</button>
                             </div>
@@ -62,14 +71,14 @@
                     </div>
                 </div>
 
-                <div class="col-6 pt-5">
+                <div class="col-md-6 pt-5 d-none d-md-block">
                     <div class="row justify-content-start">
                         <div class="rectangle col-1 p-3"></div>
                         <div class="text-light col-9">
-                            <h1>The Denim Boys Fan Club</h1>
+                            <h1 class="angkor-regular">The Denim Boys Fan Club</h1>
                             <p>Join the Denim Boys Officially Unofficial fan club where you can make bones and worms
                                 your money.
-                                Don't be a chump and let the skeletons pull your hair up, but not down</p>
+                                Don't be a chump and let the skeletons pull your hair up, but not out</p>
                         </div>
                     </div>
                 </div>
@@ -79,27 +88,37 @@
 
     <main>
         <!-- SECTION First Section w/ Card overhang -->
-        <section class="container-fluid main-background-color">
+        <section class="container-fluid main-background-color p-5">
             <div class="row">
-                <div class="col">
+                <div class="col-12 col-md pt-5 pt-md-1 order-2 order-md-1">
                     <h2>The Night the Skeletons Came to Life!</h2>
                     <p>The skeletons came up from the ground. Worms are their money , but the bones are too. When they
                         came to life they'd never seen this much money, they didn't know what to do. They came from the
                         ground in a rising motion. This is why they pull up, but not down.</p>
                 </div>
-                <div class="col">Overhanging card</div>
+                <div class="col-12 col-md containing-block d-flex justify-content-center order-1 order-md-2">
+                    <section class="magic-card bg-light rounded shadow p-5 fs-5 ">
+                        <p><i class="mdi mdi-guitar-acoustic"></i> Meet before shows with other fans.</p>
+                        <p><i class="mdi mdi-cash-multiple"></i> You don't need your money, you're alive.</p>
+                        <p><i class="mdi mdi-bone"></i> The bones are their money.</p>
+                        <p><i class="mdi mdi-grave-stone"></i> The skeletons come from the ground.</p>
+                        <p><i class="mdi mdi-arrow-up-bold"></i> Your hair will get pulled up but not out.</p>
+
+                    </section>
+                </div>
             </div>
         </section>
 
         <!-- SECTION Info w/ Button -->
-        <section class="container-fluid">
+        <section class="container-fluid p-5">
             <div class="row">
-                <div class="col">
-                    <img src="https://media.istockphoto.com/id/1419046670/vector/halloween-night-background-scary-cemetery-and-full-moon-black-and-white-vector-banner.jpg?s=612x612&w=0&k=20&c=g0FcjpvoDgu8e1fE8XVzue8COHwg4ys9o0B79kjO7yU="
+                <div class="col-12 col-md order-2 order-md-1 pt-5 pt-md-1">
+                    <img class="img-fluid"
+                        src="https://media.istockphoto.com/id/1419046670/vector/halloween-night-background-scary-cemetery-and-full-moon-black-and-white-vector-banner.jpg?s=612x612&w=0&k=20&c=g0FcjpvoDgu8e1fE8XVzue8COHwg4ys9o0B79kjO7yU="
                         alt="">
                 </div>
-                <div class="col">
-                    <div class="row">
+                <div class="col-12 col-md magic-card-offset order-1 order-md-2">
+                    <div class="row text-center">
                         <h1 class="mdi mdi-bone"></h1>
                     </div>
                     <div class="row">
@@ -111,8 +130,8 @@
                             bones, you'll run out and fall apart. Don't let them do it, you need your bones.</p>
                     </div>
                     <div class="row">
-                        <div>
-                            <button class="btn btn-primary rounded-pill">Join Today!</button>
+                        <div class="d-flex justify-content-end">
+                            <a href="#user-info"><button class="btn btn-primary rounded-pill">Join Today!</button></a>
                         </div>
                     </div>
                 </div>
@@ -120,38 +139,46 @@
         </section>
 
         <!-- SECTION Reviews -->
-        <section class="container-fluid bg-dark">
+        <section class="container-fluid main-background-color p-5">
 
-            <div class="row align-items-center justify-content-evenly">
-                <div class="col">
-                    <div class="card py-3" style="width: 18rem;">
+            <div class="row justify-content-evenly align-items-center">
+
+                <div class="col-12 col-md-4 order-2 order-md-1 p-3">
+                    <div class="card py-3 shadow-lg">
                         <div class="card-body">
-                            <h5 class="card-title">Chad</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Fork Lift Certified</h6>
+                            <div class="text-center">
+                                <h5 class="card-title">Chad</h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Fork Lift Certified</h6>
+                            </div>
                             <p class="card-text"><span><i class="mdi mdi-format-quote-open fs-3"></i></span><br>If
                                 you're here it's too late, you got malware.</p>
-
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card py-5" style="width: 18rem;">
+
+                <div class="col-12 col-md-4 order-1 order-md-2 p-3 d-flex justify-content-center">
+                    <div class="card py-5 shadow-lg " style="width: 18rem;">
                         <div class="card-body">
-                            <h3><i class="mdi mdi-star-half-full"> <i class="mdi mdi-star-outline"></i> <i
-                                        class="mdi mdi-star-outline"></i></i></h3>
-                            <h5 class="card-title">Ashley</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Travel Nurse</h6>
+                            <div class="text-center">
+                                <h3><i class="mdi mdi-star-half-full"> <i class="mdi mdi-star-outline"></i> <i
+                                            class="mdi mdi-star-outline"></i></i></h3>
+                                <h5 class="card-title">Ashley</h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Travel Nurse</h6>
+                            </div>
                             <p class="card-text"><span><i class="mdi mdi-format-quote-open fs-3"></i></span><br>So
                                 can I
                                 make money off my own bones? #Bonegrind</p>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card py-3" style="width: 18rem;">
+
+                <div class="col-12 col-md-4 order-3 order-md-3 p-3 d-flex justify-content-center">
+                    <div class="card py-3 shadow-lg" style="width: 18rem;">
                         <div class="card-body">
-                            <h5 class="card-title">Tim</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">Retired Musician</h6>
+                            <div class="text-center">
+                                <h5 class="card-title">Tim</h5>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Retired Musician</h6>
+                            </div>
                             <p class="card-text"><span><i class="mdi mdi-format-quote-open fs-3"></i></span><br>Why
                                 did
                                 they
@@ -160,6 +187,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
 
         </section>
@@ -171,19 +199,20 @@
 
     </main>
 
+    <!-- SECTION Footer -->
     <footer class="container-fluid bg-dark text-light">
         <div class="row justify-content-evenly">
-            <div class="col">
+            <div class="col-12 col-md-2 order-1 p-5">
                 <div>See Us Live!</div>
                 <div>404 Spooky Dr,</div>
                 <div>Coffin, AZ 20100</div>
             </div>
-            <div class="col">
+            <div class="col-12 col-md-2 order-2 p-5">
                 <div>contact</div>
                 <div>(999) 999-9999</div>
                 <div>Any Given Sunday 10:00PM - 4:00AM</div>
             </div>
-            <div class="col">
+            <div class="col-12 col-md-2 order-3 p-5">
                 <div>Socials</div>
                 <div>
                     <i class="mdi mdi-spotify"></i>

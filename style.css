@@ -67,6 +67,33 @@ p {
     font-style: normal;
 }
 
+/*animation*/
+.animated-logo {
+
+    animation: logo-animation 4s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes logo-animation {
+
+    75% {
+        transform: rotate(0deg);
+    }
+
+    85% {
+        transform: rotate(30deg);
+    }
+
+    90% {
+        transform: rotate(-60deg);
+    }
+
+    95% {
+        transform: rotate(45deg);
+    }
+
+}
+
 /*Google Fonts*/
 .angkor-regular {
     font-family: "Angkor", serif;
